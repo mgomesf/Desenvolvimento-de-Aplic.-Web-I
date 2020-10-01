@@ -12,46 +12,75 @@
 		<h2 align="center">
 			Ficha cadastral
 		</h2>
-		<table width="500px" cellspacing="1">
+			<font face="Arial" size="2">
 			<form action="" method="" target="" name="formTeste">
-				<font face="Arial" size="2">
-				<div>
-						<label for="nome">Nome:</label>
-						<input name="nome" type="text" size="50"/>
-					
-				</div>
-				<div>
-					
-						<label for="RG">RG:</label>
-						<input name="RG" size="13"/>
-						<label for="CPF">C.P.F:</label>
-						<input name="CPF" size="13"/>
-					
-				</div>
-				<div>
-						<label for="Endereco">Endereço:</label>
-						<input name="Endereco" size="50"/>
-				</div>
-				<div>
-						<label for="sexo">Sexo:</label>
-						<select name="sexo">
-							<option value=""></option>
-							<option value="F">Feminino</option>
-							<option value="M">Masculino</option>
-						</select>
-						<label for="DataNascimento">Data Nascimento:</label>
-						<input name="DataNascimento" type="date" size="13"/>
-				</div>
-				<div>
-						<label for="SituacaoCivil">Situação Civil:</label>
-						<input name="SituacaoCivil" type="radio" value="S">Solteiro(a)
-						<input name="SituacaoCivil" type="radio" value="C">Casado(a)
-						<input name="SituacaoCivil" type="radio" value="V">Viúvo(a)
-				</div>
-				<div>
-					<button  type="reset" >Limpar Dados</button>
-				</div>
+				<table width="500px" align="center">
+					<tbody>
+						<tr>
+							<td>
+								<label for="nome">Nome:</label>
+							</td>
+							<td colspan="3">
+								<input name="nome" type="text" size="50"/>
+							</td>
+						</tr>
+						<tr>
+							<td valing="middle">
+								<label for="RG">RG:</label>
+							</td>
+							<td valing="middle">
+								<input name="RG" size="13"/>
+							</td>
+							<td valing="middle">						
+								<label for="CPF">C.P.F:</label>
+							</td>
+							<td valing="middle">
+								<input name="CPF" size="13"/>
+							</td>
+						</tr>
+						<tr>
+							<td valing="middle">	
+								<label for="Endereco">Endereço:</label>
+							</td>
+							<td valing="middle">	
+								<input name="Endereco" size="50"/>
+							</td>
+						</tr>
+						<tr>
+							<td valing="middle">	
+								<label for="sexo">Sexo:</label>
+							</td>
+							<td valing="middle">	
+								<select name="sexo">
+									<option value=""></option>
+									<option value="F">Feminino</option>
+									<option value="M">Masculino</option>
+								</select>
+							</td >
+							<td valing="middle">	
+								<label for="DataNascimento">Data Nascimento:</label>
+							</td>
+							<td valing="middle">	
+								<input name="DataNascimento" type="date" size="13"/>
+							</td>
+						</tr>
+						<tr>
+							<td valing="middle">
+								<label for="SituacaoCivil">Situação Civil:</label>
+							</td>
+							<td valing="middle">
+								<input name="SituacaoCivil" type="radio" value="S">Solteiro(a)
+								<input name="SituacaoCivil" type="radio" value="C">Casado(a)
+								<input name="SituacaoCivil" type="radio" value="V">Viúvo(a)
+							</td>
+						</tr>
+						<tr align="center">
+							<td colspan="4"> 
+								<button  type="reset" >Limpar Dados</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</form>		
-		</table>
 	</body>
 </html>
