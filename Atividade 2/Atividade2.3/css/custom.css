@@ -1,0 +1,134 @@
+* {
+    font-family: Arial;
+}
+
+html body {
+    background-color: #f0f0f5;
+}
+
+.azul-marinho {
+    color: #003366;
+}
+
+.legenda-azul-marinho::before {
+    background-color: #003366;
+}
+
+.azul-celeste {
+    color: #1398be;
+}
+
+.legenda-azul-celeste::before {
+    background-color: #1398be;
+}
+
+.laranja {
+    color: #de9800;
+}
+
+.legenda-laranja::before {
+    background-color: #de9800;
+}
+
+.cinza {
+    color: #dddddd;
+}
+
+.vermelho {
+    color: #c91b04;
+}
+
+.legenda-vermelho::before {
+    background-color: #c91b04;
+}
+
+.separator {
+    border-bottom: 2px solid #cccccc !important;
+}
+
+.container table {
+    width: 50em;
+    margin: 5rem auto;
+
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.container table th,
+.container table td {
+    border: 0;
+}
+
+.container table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.container table th {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #999999;
+    border-bottom: 0;
+}
+
+/* Posição do time */
+.container table tr td strong {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Nome do time */
+.container table tr td span {
+    font-size: 14px;
+    margin: auto 0;
+    font-weight: bold;
+    text-align: left;
+    color: #666666;
+}
+
+/* Demais colunas de classificação */
+.container table tr td + td {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    color: #666666;
+}
+
+/* Quantidade de pontos do time */
+.container table tr td:nth-child(2) {
+    font-weight: bold;
+    color: #000000;
+}
+
+.container table tr td:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.container table tfoot tr {
+    border-bottom: 0;
+}
+
+.legenda::before {
+    content: "";
+
+    display: inline-flex;
+
+    width: 10px;
+    height: 10px;
+
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.container table tfoot tr span,
+.container table tfoot tr strong {
+    font-size: 10px;
+    text-align: left;
+    font-weight: normal;
+    color: #8f8f8f;
+}
+
+.container table tfoot tr strong {
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+* {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+html body {
+    background-color: #eeeeee;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.container header img {
+    margin: 5em auto 2em;
+}
+
+.container hr {
+    background-color: #bbbbbb;
+}
+
+.container main {
+    margin-top: 5em;
+}
+
+.container main form {
+    margin: 0;
+}
+
+.container main form label {
+    padding-top: 7px;
+    margin-bottom: 0;
+
+    text-align: end;
+    font-weight: bold;
+}
+
+.container main form input {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.container main form .links div {
+    margin-bottom: 15px;
+
+    color: #337ab7;
+}
+
+.container main form .btn {
+    float: right;
+}
+
+.container footer {
+    margin-top: 10em;
+}
+
+.container footer .col-6 {
+    margin-bottom: 2em;
+}
+
+.container footer .col-6:last-child img {
+    float: right;
+}
