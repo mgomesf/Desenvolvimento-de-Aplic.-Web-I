@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Prova 1</title>
+
+    <script src="./scripts/jquery-3.5.1.min.js"></script>
+    <script src="./scripts/jquery.mask.js"></script>
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-12 form-group">
+            <label for="nome">Nome:</label>
+            <input
+              id="name-input"
+              class="form-control"
+              name="nome"
+              type="text"
+              required
+            />
+          </div>
+
+          <div class="col-2 form-group">
+            <label for="tipo-pessoa">Tipo Pessoa:</label>
+
+            <div class="form-control no-border">
+              <input
+                type="radio"
+                id="fisica-input"
+                name="tipo-pessoa"
+                value="cpf"
+                onclick="setMask('cpf')"
+                checked
+              />
+              <label for="fisica-input">Física</label>
+
+              <input
+                type="radio"
+                id="juridica-input"
+                name="tipo-pessoa"
+                value="cnpj"
+                onclick="setMask('cnpj')"
+              />
+              <label for="juridica-input">Jurídica</label>
+            </div>
+          </div>
+          <div class="col-3 form-group">
+            <label id="cpf-cnpj-label" for="cpf-cnpj">CPF:</label>
+            <input
+              id="cpf-cnpj-input"
+              class="form-control"
+              name="cpf-cnpj"
+              type="text"
+              required
+            />
+          </div>
+          <div class="col-2 form-group">
+            <label for="cep">CEP:</label>
+            <input
+              id="cep-input"
+              class="form-control"
+              name="cep"
+              type="text"
+              required
+            />
+          </div>
+          <div class="col-3 form-group">
+            <label for="estado">Estado:</label>
+            <select
+              id="estado-select"
+              class="form-control"
+              name="estado"
+              type="text"
+              required
+            >
+              <option value=""></option>
+              <option value="mg">MG</option>
+              <option value="sp">SP</option>
+              <option value="rj">RJ</option>
+              <option value="es">ES</option>
+            </select>
+          </div>
+          <div class="col-2">
+            <div class="button-group">
+              <button id="submit-button" class="btn btn-success" type="submit">
+                Enviar
+              </button>
+              <button class="btn btn-info" type="reset">Limpar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

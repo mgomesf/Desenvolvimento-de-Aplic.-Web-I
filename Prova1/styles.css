@@ -1,0 +1,15 @@
+.container {
+  padding: 5rem 0;
+}
+
+.container .button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 100%;
+}
+
+.container .form-control.no-border {
+  border: 0;
+}
